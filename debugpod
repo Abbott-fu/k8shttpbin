@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debugpod
+spec:
+  containers:
+  - name: app
+    image: fuzlreg.azurecr.cn/tools/debian:v1
+  imagePullSecrets:
+  - name: acr-pull-secret
