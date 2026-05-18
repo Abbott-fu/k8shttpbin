@@ -5,8 +5,6 @@ metadata:
 spec:
   containers:
   - name: app
-    image: fuzlreg.azurecr.cn/tools/debian:v1
-    command: ["/bin/sh"]
-    args: ["-c", "while true; do echo Hello from the debian container ; sleep 2;done"]
+    image: fuzlreg.azurecr.cn/tools/debian:v3
   imagePullSecrets:
   - name: acr-pull-secret
