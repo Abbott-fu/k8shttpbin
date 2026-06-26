@@ -59,3 +59,5 @@ spec:
         name: httpbin
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: acr-pull-secret
